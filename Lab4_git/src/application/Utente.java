@@ -73,6 +73,11 @@ public class Utente {
 		return "Utente [nome=" + nome + ", genero=" + genero + ", idade=" + idade + ", altura=" + altura + ", peso="
 				+ peso + "]";
 	}
-
+	
+	public double calcularIMC(int peso, double altura) {
+		
+		double imc = peso/(altura*altura);
+		return imc;
+	}
 	
 }
